@@ -1,6 +1,12 @@
+body{
+
+    background-color: #37334e;
+}
+
 #storage-div {
     margin: 50px auto 0;
     max-width: 700px;
+
 }
 
 #storage-div header {
@@ -13,8 +19,9 @@
     font-size: 24px;
     padding: 10px;
     margin-left: 30px;
-    border: 1px solid green;
+    border: 1px #58f058 solid;
     border-radius: 4px;
+    color: #ebeceb !important;
 }
 
 #storage-div header button svg {
@@ -30,8 +37,8 @@
     border-radius: 5px;
     padding: 30px;
     text-align: center;
-    border: 2px solid green;
-    color: #999988;
+    border: 1px #ebeceb dashed;
+    color: #ebeceb;
 }
 
 #storage-div ul {
@@ -45,6 +52,14 @@
     align-items: center;
 }
 
+#storage-div ul li:hover{
+    transition: all .3s;
+    -webkit-transition: all .3s; /* for Safari & Chrome */
+    box-shadow: 0 4px 10px 0 #353536;
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+}
+
 #storage-div ul li + li {
     padding-top: 20px;
     margin-top: 20px;
@@ -55,11 +70,17 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+    color: #ebeceb;
 }
 
 #storage-div ul li .fileDetails strong {
     margin-left: 10px;
     text-align: center;
+
+}
+
+#storage-div ul li span{
+    color: #ebeceb;
 }
 
 
